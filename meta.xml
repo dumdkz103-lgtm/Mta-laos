@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta>
+    <info
+        author="TRAE Assistant"
+        name="Usui Core"
+        version="0.1.0"
+        type="script"
+        description="แกนหลักสำหรับเซิร์ฟเวอร์ MTA:SA แนว Modern GTA V"
+    />
+ 
+    <min_mta_version client="1.6.0" server="1.6.0" />
+ 
+    <script src="shared/config.lua" type="shared" />
+    <script src="shared/items.lua" type="shared" />
+    <script src="shared/helpers.lua" type="shared" />
+ 
+    <script src="server/bootstrap.lua" type="server" />
+    <script src="server/database.lua" type="server" />
+    <script src="server/accounts.lua" type="server" />
+    <script src="server/characters.lua" type="server" />
+    <script src="server/inventory.lua" type="server" />
+    <script src="server/admin.lua" type="server" />
+ 
+    <script src="client/admin.lua" type="client" />
+    <script src="client/hud.lua" type="client" />
+ 
+    <oop>true</oop>
+    <download_priority_group>1</download_priority_group>
+ 
+    <export function="usuiGetBagConfig" type="shared" />
+    <export function="usuiGetItemConfig" type="shared" />
+</meta>
